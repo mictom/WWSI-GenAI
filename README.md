@@ -34,11 +34,6 @@ Create a `.env` file in the root directory with your API keys and configuration:
 # OpenAI API Configuration
 OPENAI_API_KEY=your-openai-api-key-here
 
-# Optional: OpenAI Organization (if applicable)
-OPENAI_ORG_ID=your-org-id-here
-
-# Optional: Model Configuration
-OPENAI_MODEL=gpt-4
 ```
 
 See `.env.example` for a template.
