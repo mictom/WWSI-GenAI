@@ -172,4 +172,7 @@ cython_debug/
 notebooks/results/*
 
 # NER model files
-ner_per_and_org/ner/
+ner_per_and_org/
+
+# Chroma vector database
+chroma_db/
