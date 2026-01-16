@@ -1,0 +1,132 @@
+{
+  "5e475f68": [
+    {
+      "role": "human",
+      "content": "Halo? S\u0142yszysz mnie? Halo, halo? S\u0142yszysz mnie?",
+      "timestamp": "2026-01-16T19:26:20.581190"
+    },
+    {
+      "role": "ai",
+      "content": "Tak, s\u0142ysz\u0119 Ci\u0119! Jak mog\u0119 Ci pom\u00f3c?",
+      "timestamp": "2026-01-16T19:26:22.298191"
+    },
+    {
+      "role": "human",
+      "content": "Halo? S\u0142yszysz mnie? Halo, halo? S\u0142yszysz mnie?",
+      "timestamp": "2026-01-16T19:26:29.218732"
+    },
+    {
+      "role": "ai",
+      "content": "Tak, s\u0142ysz\u0119 Ci\u0119! Czy jest co\u015b, z czym mog\u0119 Ci pom\u00f3c?",
+      "timestamp": "2026-01-16T19:26:31.637863"
+    },
+    {
+      "role": "human",
+      "content": "Halo? S\u0142yszysz mnie? Halo, halo? S\u0142yszysz mnie?",
+      "timestamp": "2026-01-16T19:26:37.673878"
+    },
+    {
+      "role": "ai",
+      "content": "Tak, s\u0142ysz\u0119 Ci\u0119! Jak mog\u0119 Ci pom\u00f3c?",
+      "timestamp": "2026-01-16T19:26:41.567126"
+    },
+    {
+      "role": "human",
+      "content": "Halo? S\u0142yszysz mnie? Halo, halo? S\u0142yszysz mnie?",
+      "timestamp": "2026-01-16T19:26:50.476313"
+    },
+    {
+      "role": "ai",
+      "content": "Tak, s\u0142ysz\u0119 Ci\u0119! Daj mi zna\u0107, jak mog\u0119 Ci pom\u00f3c.",
+      "timestamp": "2026-01-16T19:26:53.438297"
+    },
+    {
+      "role": "human",
+      "content": "Halo? S\u0142yszysz mnie? Halo, halo? S\u0142yszysz mnie?",
+      "timestamp": "2026-01-16T19:26:59.895633"
+    },
+    {
+      "role": "ai",
+      "content": "Tak, s\u0142ysz\u0119 Ci\u0119! Je\u015bli masz jakie\u015b pytania lub potrzebujesz pomocy, jestem tutaj, aby pom\u00f3c.",
+      "timestamp": "2026-01-16T19:27:04.707472"
+    }
+  ],
+  "c119c6a2": [
+    {
+      "role": "human",
+      "content": "\u0410\u043b\u043b\u043e, \u0441\u043b\u044b\u0448\u0430\u0442\u044c \u043c\u0435\u043d\u044f?",
+      "timestamp": "2026-01-16T19:28:46.599554"
+    },
+    {
+      "role": "ai",
+      "content": "\u0414\u0430, \u044f \u0432\u0430\u0441 \u0441\u043b\u044b\u0448\u0443! \u0427\u0435\u043c \u043c\u043e\u0433\u0443 \u043f\u043e\u043c\u043e\u0447\u044c?",
+      "timestamp": "2026-01-16T19:28:47.840213"
+    },
+    {
+      "role": "human",
+      "content": "\u0410\u043b\u043b\u043e, \u0441\u043b\u044b\u0448\u0430\u0442\u044c \u043c\u0435\u043d\u044f?",
+      "timestamp": "2026-01-16T19:28:52.434135"
+    },
+    {
+      "role": "ai",
+      "content": "\u0414\u0430, \u044f \u0432\u0430\u0441 \u0441\u043b\u044b\u0448\u0443. \u041a\u0430\u043a \u044f \u043c\u043e\u0433\u0443 \u043f\u043e\u043c\u043e\u0447\u044c \u0432\u0430\u043c \u0441\u0435\u0433\u043e\u0434\u043d\u044f?",
+      "timestamp": "2026-01-16T19:28:53.359611"
+    },
+    {
+      "role": "human",
+      "content": "\u0410\u043b\u043b\u043e, \u0441\u043b\u044b\u0448\u0430\u0442\u044c \u043c\u0435\u043d\u044f?",
+      "timestamp": "2026-01-16T19:28:59.158128"
+    },
+    {
+      "role": "ai",
+      "content": "\u0414\u0430, \u044f \u0432\u0430\u0441 \u0441\u043b\u044b\u0448\u0443! \u0415\u0441\u043b\u0438 \u0443 \u0432\u0430\u0441 \u0435\u0441\u0442\u044c \u0432\u043e\u043f\u0440\u043e\u0441\u044b \u0438\u043b\u0438 \u0432\u0430\u043c \u043d\u0443\u0436\u043d\u0430 \u043f\u043e\u043c\u043e\u0449\u044c, \u0434\u0430\u0439\u0442\u0435 \u0437\u043d\u0430\u0442\u044c.",
+      "timestamp": "2026-01-16T19:29:00.730766"
+    }
+  ],
+  "fc2ba2a7": [
+    {
+      "role": "human",
+      "content": "Halo? Co tam u ciebie?",
+      "timestamp": "2026-01-16T19:35:46.919304"
+    },
+    {
+      "role": "ai",
+      "content": "Cze\u015b\u0107! Wszystko u mnie dobrze, dzi\u0119kuj\u0119 za pytanie. Jak mog\u0119 ci dzi\u015b pom\u00f3c?",
+      "timestamp": "2026-01-16T19:35:49.726859"
+    }
+  ],
+  "745893fd": [
+    {
+      "role": "human",
+      "content": "Hello? Dzie\u0144 dobry.",
+      "timestamp": "2026-01-16T19:38:38.373627"
+    },
+    {
+      "role": "ai",
+      "content": "Dzie\u0144 dobry! How can I assist you today?",
+      "timestamp": "2026-01-16T19:38:39.805014"
+    },
+    {
+      "role": "human",
+      "content": "I to nasza pogodzia.",
+      "timestamp": "2026-01-16T19:39:02.678755"
+    },
+    {
+      "role": "ai",
+      "content": "It seems like you're referring to the weather! How's the weather where you are today? If you're looking for a weather update, I can help you find that information.",
+      "timestamp": "2026-01-16T19:39:04.286530"
+    }
+  ],
+  "9570d907": [
+    {
+      "role": "human",
+      "content": "cze\u015b\u0107",
+      "timestamp": "2026-01-16T19:40:04.482882"
+    },
+    {
+      "role": "ai",
+      "content": "Cze\u015b\u0107! Jak mog\u0119 Ci pom\u00f3c?",
+      "timestamp": "2026-01-16T19:40:06.052770"
+    }
+  ]
+}
