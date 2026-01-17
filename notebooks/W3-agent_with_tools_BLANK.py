@@ -68,7 +68,6 @@ def read_reservation(reservation_id: str) -> str:
     initialize_csv()
 
     try:
-        breakpoint()  # For debugging
         df = pd.read_csv(RESERVATIONS_FILE)
         reservation = df[df['reservation_id'] == reservation_id]
 
@@ -83,14 +82,16 @@ def read_reservation(reservation_id: str) -> str:
         return f"Error looking up reservation: {str(e)}"
 
 
-##TODO: Add tools that you want to use in the agent
-tools = [save_reservation, read_reservation]
+## TODO 1: Add the tools you want the agent to use to this list
+## Hint: We defined two tools above - save_reservation and read_reservation
+tools = []
 
 # Create a tools dictionary for easy lookup
 tools_dict = {tool.name: tool for tool in tools}
 
-# Bind tools to the LLM
-llm_with_tools = llm.bind_tools(tools)
+## TODO 2: Bind the tools to the LLM so it knows what tools are available
+## Hint: Use llm.bind_tools() with the tools list
+llm_with_tools = None  # Replace None with the correct binding
 
 # System prompt for the agent
 SYSTEM_PROMPT = """You are a helpful travel booking assistant.
@@ -104,7 +105,10 @@ To make a new reservation, you need:
 To look up an existing reservation, you need the reservation ID.
 
 If you are not sure which tool is best for the task use multiple and then select best output.
-When you are using a tool, remember to provide all relevant context for the tool to execute the task."""
+When you are using a tool, remember to provide all relevant context for the tool to execute the task.
+
+If you gave the user some recommendations in previous messages and he agrees with them use those recommendations in your actions.
+When analyzing tool output, compare it with Human question, if it only partially answered it explain it to the user."""
 
 
 def run_agent_with_query(query: str, verbose: bool = True) -> dict:
@@ -118,10 +122,11 @@ def run_agent_with_query(query: str, verbose: bool = True) -> dict:
     Returns:
         Dictionary with input and output
     """
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": query}
-    ]
+    ## TODO 4: Initialize the messages list with system prompt and user query
+    ## Hint: Create a list with two dictionaries:
+    ##   - First dict: role="system", content=SYSTEM_PROMPT
+    ##   - Second dict: role="user", content=query
+    messages = []
 
     if verbose:
         print(f"\n{'='*60}")
@@ -151,9 +156,11 @@ def run_agent_with_query(query: str, verbose: bool = True) -> dict:
                 print(f"\n> Calling tool: {tool_name}")
                 print(f"  Arguments: {tool_args}")
 
-            # Execute the tool
+            ## TODO 3: Execute the tool and get the result
+            ## Hint: Use tools_dict to get the tool by name, then call .invoke() with tool_args
+            ## Don't forget to handle the case when tool_name is not in tools_dict
             if tool_name in tools_dict:
-                tool_result = tools_dict[tool_name].invoke(tool_args)
+                tool_result = None  # Replace with the actual tool invocation
             else:
                 tool_result = f"Error: Unknown tool {tool_name}"
 
@@ -170,10 +177,10 @@ def run_agent_with_query(query: str, verbose: bool = True) -> dict:
 
 
 if __name__ == "__main__":
-    ##TODO: put a breakpoint in csv saving to see how agent and code overlap, evaluate inputs/outputs
-    # query = "I want to book a trip on 2023-12-25 to Paris, France. 2 people for 3 nights. Its a business trip"
-    # output = run_agent_with_query(query)
+    # Test your implementation with these queries:
+    query = "I want to book a trip on 2023-12-25 to Paris, France. 2 people for 3 nights. Its a business trip"
+    output = run_agent_with_query(query)
 
-    query_2 = "What is the status of reservation 9c89a9454?"
+    query_2 = "What is the status of reservation 9c89a904?"
     output_2 = run_agent_with_query(query_2)
     print(output_2)
