@@ -55,21 +55,13 @@ def save_conversation(conversation_id: str, messages: List[Dict[str, str]]):
     """
     initialize_memory_file()
 
-    ##TODO: open MEMORY_FILE, add new record with conversation_id as key and messages as value
-    try:
-        # Read existing conversations
-        with open(MEMORY_FILE, 'r') as file:
-            all_conversations = json.load(file)
-        
-        # Update with new messages
-        all_conversations[conversation_id] = messages
-        
-        # Write back to file
-        with open(MEMORY_FILE, 'w') as file:
-            json.dump(all_conversations, file, indent=2)
-            
-    except Exception as e:
-        print(f"Error saving conversation: {str(e)}")
+    ## TODO 1: Save the conversation to the JSON file
+    ## Hint:
+    ##   1. Read existing conversations from MEMORY_FILE using json.load()
+    ##   2. Add/update the conversation using conversation_id as key and messages as value
+    ##   3. Write back to MEMORY_FILE using json.dump() with indent=2
+    ## Wrap in try/except to handle errors
+    pass  # Replace with your implementation
 
 def format_messages_for_prompt(messages: List[Dict[str, str]]):
     """Convert stored messages to LangChain message format"""
@@ -120,24 +112,22 @@ def chatbot_response(user_input: str, conversation_id: Optional[str] = None) -> 
     messages = get_conversation_history(conversation_id)
     
 
-    ##TODO: extract formatted history with format_messages_for_prompt function
-    # Format messages for the prompt
-    formatted_history = format_messages_for_prompt(messages)
+    ## TODO 2: Format the conversation history for the prompt
+    ## Hint: Use the format_messages_for_prompt() function with messages
+    formatted_history = None  # Replace with the correct function call
 
-    # Add user message to history
+    ## TODO 3: Create a chain and generate a response
+    ## Hint:
+    ##   1. Create a chain by combining prompt and llm using the pipe operator (prompt | llm)
+    ##   2. Invoke the chain with a dict containing "chat_history" and "input" keys
+    chain = None  # Replace with prompt | llm
+    response = None  # Replace with chain.invoke(...)
     
-    
-    
-    # Generate response
-    ##TODO: Combine prompt and llm to create a chain, invoke it with chat_history and input arguments
-
-    chain = prompt | llm
-    response = chain.invoke({"input":user_input, "chat_history": formatted_history})
-    
-    # Add AI response to history
-    ##TODO: append AI response to messages list, select role from `ai`, `system` or `human`, use datetime.now for timestamp
-    messages.append({"role": "human", "content": user_input, "timestamp": datetime.now().isoformat()})
-    messages.append({"role": 'ai', "content": response.content, "timestamp": datetime.now().isoformat()})
+    ## TODO 4: Add messages to the conversation history
+    ## Hint: Append two dictionaries to messages list:
+    ##   1. Human message: {"role": "human", "content": user_input, "timestamp": datetime.now().isoformat()}
+    ##   2. AI message: {"role": "ai", "content": response.content, "timestamp": datetime.now().isoformat()}
+    pass  # Replace with two messages.append() calls
     
     # Save updated conversation
     save_conversation(conversation_id, messages)
